@@ -1,3 +1,4 @@
+import Card from '@/components/Card';
 import Link from 'next/link';
 import React from 'react';
 
@@ -20,13 +21,13 @@ const PostsPage = () => {
 		},
 	];
 	return (
-		<div className="min-h-screen">
+		<div className="min-h-screen w-full">
 			<h1 className="text-center text-4xl font-bold py-4">Blog Posts</h1>
-			<ul>
+			<ul className="flex flex-row w-full my-20 ">
 				{blogs.map((b) => (
 					<li key={b.id}>
 						<Link href={`posts/${b.id}`}>
-							<h2>{b.name}</h2>
+							<Card />
 						</Link>
 					</li>
 				))}
