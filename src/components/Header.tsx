@@ -9,13 +9,17 @@ const Header = () => {
 			<nav className="flex flex-row bg-sky-100">
 				<div className="w-full h-12 flex flex-row justify-between ">
 					<Link href="/">
-						<Image
+						{/* <Image
 							src={hprofile}
 							alt="picsum"
 							width={80}
 							height={100}
 							className="px-4"
-						/>
+						/> */}
+						<div className="px-4 flex flex-row">
+							<h1>N</h1>
+							<p>ext.</p>
+						</div>
 					</Link>
 					<ul className=" flex flex-row justify-evenly m-4">
 						<li className="px-8">
@@ -23,6 +27,12 @@ const Header = () => {
 						</li>
 						<li className="px-8">
 							<Link href="/posts">Posts</Link>
+						</li>
+						<li className="px-8">
+							<Link href="/docs">Docs</Link>
+						</li>
+						<li className="px-8">
+							<Link href="/products">Products</Link>
 						</li>
 					</ul>
 				</div>

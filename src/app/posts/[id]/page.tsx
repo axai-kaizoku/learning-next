@@ -1,3 +1,4 @@
+import Spinner from '@/components/Spinner';
 import Link from 'next/link';
 import React from 'react';
 
@@ -8,14 +9,12 @@ const Page = () => {
 			<div className="px-16">
 				<Link href="/posts">Back</Link>
 			</div>
+			<Spinner />
 			<div className="py-8 px-16">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tenetur
 				sunt itaque unde necessitatibus, atque harum iure deleniti aliquam sit
-				quam ex, impedit eius blanditiis quo porro delectus esse fuga!
+				quam ex, impedit eius blanditiis quo porro delectus esse fuga! S
 			</div>
-			{/* <div className="h-screen w-full flex justify-center items-center">
-				<div className="h-12 w-12 rounded-full border-solid border-4 border-gray-200  border-t-blue-400 animate-spin"></div>
-			</div> */}
 		</div>
 	);
 };
