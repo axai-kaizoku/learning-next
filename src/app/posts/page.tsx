@@ -2,6 +2,10 @@ import Card from '@/components/Card';
 import Link from 'next/link';
 import React from 'react';
 
+export const metadata = {
+	title: 'Posts',
+};
+
 const PostsPage = () => {
 	const blogs = [
 		{

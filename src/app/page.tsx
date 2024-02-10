@@ -7,10 +7,11 @@ export default function Home() {
 			<div className="text-center p-8">
 				<h1 className="text-4xl py-12">Welcome to my blog</h1>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Necessitatibus mollitia nemo voluptatibus quaerat enim quisquam
-					praesentium laborum ipsam, quod facere autem aperiam expedita nostrum
-					sint similique molestiae repellat voluptas corrupti!
+					different blow attention threw rough your swing laid stream familiar
+					post bar pile scientific luck together there field boy bush liquid
+					farm basket means balloon us appearance standard freedom unhappy
+					example there military army joined follow during wealth mouth exchange
+					opposite potatoes pool result dust chief pour slabs
 				</p>
 			</div>
 		</main>

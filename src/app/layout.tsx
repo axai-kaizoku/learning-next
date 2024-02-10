@@ -4,7 +4,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-	title: 'Basic Next',
+	title: {
+		default: 'Next.js Bruh!!',
+		template: '%s | Next.js',
+	},
 	description: 'Next basic for learning',
 };
 
