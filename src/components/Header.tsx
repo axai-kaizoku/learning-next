@@ -4,14 +4,6 @@ import Link from 'next/link';
 import React from 'react';
 import { usePathname } from 'next/navigation';
 
-const navLinks = [
-	{ name: 'Home', href: '/' },
-	{ name: 'Login', href: '/login' },
-	{ name: 'Posts', href: '/posts' },
-	{ name: 'Docs', href: '/docs' },
-	{ name: 'Products', href: '/products' },
-];
-
 const Header = () => {
 	const hprofile = 'https://picsum.photos/100/100';
 	const pathname = usePathname();
@@ -34,20 +26,41 @@ const Header = () => {
 						</div>
 					</Link>
 					<ul className=" flex flex-row justify-evenly m-4">
-						{navLinks.map((link) => {
-							const isActive = pathname.match(link.href);
-							return (
-								<li
-									className="px-8"
-									key={link.name}>
-									<Link
-										href={link.href}
-										className={isActive ? 'font-bold' : ''}>
-										{link.name}
-									</Link>
-								</li>
-							);
-						})}
+						<li className="px-8">
+							<Link
+								href="/"
+								className={pathname === '/' ? 'font-bold' : ''}>
+								Home
+							</Link>
+						</li>
+						<li className="px-8">
+							<Link
+								href="/login"
+								className={pathname.startsWith('/login') ? 'font-bold' : ''}>
+								Login
+							</Link>
+						</li>
+						<li className="px-8">
+							<Link
+								href="/posts"
+								className={pathname.startsWith('/posts') ? 'font-bold' : ''}>
+								Posts
+							</Link>
+						</li>
+						<li className="px-8">
+							<Link
+								href="/docs"
+								className={pathname.startsWith('/docs') ? 'font-bold' : ''}>
+								Docs
+							</Link>
+						</li>
+						<li className="px-8">
+							<Link
+								href="/products"
+								className={pathname.startsWith('/products') ? 'font-bold' : ''}>
+								Products
+							</Link>
+						</li>
 					</ul>
 				</div>
 			</nav>
