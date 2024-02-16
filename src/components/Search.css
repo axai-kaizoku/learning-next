@@ -14,3 +14,10 @@
     border: 1px solid black;
     padding: 4rem;
 }
+
+.feb {
+    margin: 10rem;
+    width: 10rem;
+    height: 10rem;
+    background-color: #0000ff;
+}

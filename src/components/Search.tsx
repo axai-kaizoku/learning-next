@@ -16,6 +16,7 @@ const Search = () => {
         setValue(name)
     }
     return (
+        <>
         <div className="m-8 text-center">
             {JSON.stringify(value)}
             <h1 className="text-4xl font-bold">Search</h1>
@@ -36,6 +37,10 @@ const Search = () => {
                 </div>
             </div>
         </div>
+    <div className="feb">
+
+    </div>
+        </>
     )
 }
 
