@@ -13,10 +13,15 @@ const navLinks = [
 
 const AuthLayout = ({ children }: { children: React.ReactNode }) => {
 	const pathname = usePathname();
-	const [input, setInput] = useState("");
+	const [input, setInput] = useState('');
 	return (
 		<>
-			<input type="text" onChange={e => setInput(e.target.value)} className='border-solid border-4 rounded'/>
+			<input
+				type="text"
+				value={input}
+				onChange={(e) => setInput(e.target.value)}
+				className="border-solid border-4 rounded"
+			/>
 
 			<ul className="flex">
 				{navLinks.map((link, i) => {
@@ -36,7 +41,7 @@ const AuthLayout = ({ children }: { children: React.ReactNode }) => {
 			</ul>
 			<br />
 			<br />
-			
+
 			<br />
 			{children}
 		</>
