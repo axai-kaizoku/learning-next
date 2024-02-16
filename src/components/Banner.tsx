@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React from 'react';
+
 import imgbruh from '../../public/images/nodejs.png';
 
 const Banner = () => {

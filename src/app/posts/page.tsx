@@ -1,6 +1,5 @@
 import Card from '@/components/Card';
 import Link from 'next/link';
-import React from 'react';
 
 export const metadata = {
 	title: 'Posts',
@@ -31,7 +30,7 @@ const PostsPage = () => {
 				{blogs.map((b) => (
 					<li key={b.id}>
 						<Link href={`posts/${b.id}`}>
-							<Card />
+							<Card>{b.name}</Card>
 						</Link>
 					</li>
 				))}

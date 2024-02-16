@@ -1,6 +1,4 @@
-import Spinner from '@/components/Spinner';
 import Link from 'next/link';
-import React from 'react';
 
 const Page = () => {
 	return (
@@ -9,7 +7,6 @@ const Page = () => {
 			<div className="px-16">
 				<Link href="/posts">Back</Link>
 			</div>
-			<Spinner />
 			<div className="py-8 px-16">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tenetur
 				sunt itaque unde necessitatibus, atque harum iure deleniti aliquam sit

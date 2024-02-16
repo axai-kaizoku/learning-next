@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import React from 'react';
 
 const Footer = () => {
 	return (
@@ -7,13 +6,14 @@ const Footer = () => {
 			<p className="px-3">&copy; CopyRights Reserved</p>
 			<ul className="flex flex-row">
 				<li className="px-8">
-					<Link href="/about">About</Link></li>
+					<Link href="/about">About</Link>
+				</li>
 				<li className="px-8">
 					<Link href="/dashboard">Dashboard</Link>
 				</li>
 				<li className="px-8">
 					<Link href="/contact">Contact Us</Link>
-					</li>
+				</li>
 				<li className="px-8">Terms and Conditions</li>
 			</ul>
 		</footer>

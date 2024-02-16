@@ -1,5 +1,3 @@
-import React from 'react';
-
 function getRandomInt(count: number) {
 	return Math.floor(Math.random() * count);
 }
