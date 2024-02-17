@@ -5,18 +5,21 @@ export const metadata: Metadata = {
 	title: 'Dashboard',
 };
 
-const Dashboard = ({
+export default function Dashboard({
 	children,
 	users,
 	revenue,
 	notifications,
+	login,
 }: {
 	children: React.ReactNode;
 	users: React.ReactNode;
 	revenue: React.ReactNode;
 	notifications: React.ReactNode;
-}) => {
-	return (
+	login: React.ReactNode;
+}) {
+	const isLoggedIn = true;
+	return isLoggedIn ? (
 		<div>
 			{children}
 			<div className="flex">
@@ -27,7 +30,7 @@ const Dashboard = ({
 				<div className="flex flex-1">{notifications}</div>
 			</div>
 		</div>
+	) : (
+		login
 	);
-};
-
-export default Dashboard;
+}
