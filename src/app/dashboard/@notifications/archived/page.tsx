@@ -1,18 +1,18 @@
 import Card from '@/components/Card';
 import Link from 'next/link';
 
-const Notifications = () => {
+const ArchivedNotifications = () => {
 	return (
 		<Card>
-			<div>Notifications</div>
+			<div>Archived Notifications</div>
 			<br />
 			<Link
-				href="/dashboard/archived"
+				href="/dashboard"
 				className="btn shadow-xl">
-				Archived
+				Default
 			</Link>
 		</Card>
 	);
 };
 
-export default Notifications;
+export default ArchivedNotifications;

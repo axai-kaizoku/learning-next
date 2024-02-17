@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.btn {
+		padding: 0.3rem;
+		border-radius: 0.2rem;
+		border: 1px solid black;
+	}
+}
+
+/* border p-1 rounded shadow-sm hover:shadow-lg */
