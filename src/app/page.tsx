@@ -1,4 +1,5 @@
 import Banner from '@/components/Banner';
+import Link from 'next/link';
 
 export default function Home() {
 	return (
@@ -11,7 +12,8 @@ export default function Home() {
 					post bar pile scientific luck together there field boy bush liquid
 					farm basket means balloon us appearance standard freedom unhappy
 					example there military army joined follow during wealth mouth exchange
-					opposite potatoes pool result dust chief pour slabs
+					opposite potatoes pool result dust chief pour slabs{' '}
+					<Link href="/photo-feed">Photo Feed</Link>
 				</p>
 			</div>
 		</main>
