@@ -10,6 +10,7 @@ const navLinks = [
 	{ name: 'Posts', href: '/posts' },
 	{ name: 'Docs', href: '/docs' },
 	{ name: 'Products', href: '/products' },
+	{ name: 'FileSharing', href: '/file' },
 ];
 import headImg from '../../public/android-chrome-512x512.png';
 
