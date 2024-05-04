@@ -11,6 +11,8 @@ const navLinks = [
 	{ name: 'Docs', href: '/docs' },
 	{ name: 'Products', href: '/products' },
 	{ name: 'FileSharing', href: '/file' },
+	{ name: 'Timer', href: '/timer' },
+	{ name: '2048', href: '/2048' },
 ];
 import headImg from '../../public/android-chrome-512x512.png';
 
@@ -30,7 +32,7 @@ const Header = () => {
 							className="px-4"
 						/>
 					</Link>
-					<ul className=" flex flex-row justify-evenly m-4">
+					<ul className=" flex flex-row flex-wrap justify-evenly m-4">
 						{navLinks.map((link) => {
 							const isActive = pathname.match(link.href);
 							return (
